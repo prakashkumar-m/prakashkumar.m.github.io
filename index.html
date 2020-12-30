@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Prakash Kumar M</title>
+  <meta charset="UTF-8">   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="public/image/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="public/css/style.css">
+  <link rel="stylesheet" type="text/css" href="public/css/responsive.css">
+  <script src="public/js/jquery.min.js"></script>
+</head>
+<body>
+  
+<!-- Header -->
+<div class="header">
+  <div>
+  <h1>Prakash Kumar M</h1>
+</div>
+<div>
+  <ul>
+    <li><a href="javascript:;" class="list li_web active">Web</a></li>
+    <li><a href="javascript:;" class="list li_mobile">Mobile</a></li>
+    <li><a href="javascript:;" class="list li_logo">Logo</a></li>
+  </ul>
+</div>
+</div>
+
+<!-- Photo Grid -->
+<div class="web">
+<div class="row"> 
+  <div class="column">
+    <div class="inner_div">
+      <img src="public/image/web/01.png" id = "101" style="width:100%"> 
+    </div>
+    <div class="inner_div"> 
+      <img src="public/image/web/04.png" id = "104"style="width:100%">   
+    </div>
+    <div class="inner_div"> 
+      <img src="public/image/web/07.png" id = "107"style="width:100%">  
+    </div>
+  </div>
+  <div class="column">
+    <div class="inner_div"> 
+      <img src="public/image/web/02.png" id = "102" style="width:100%">
+    </div>
+    <div class="inner_div">  
+      <img src="public/image/web/05.png" id = "105" style="width:100%">  
+    </div>
+    
+  </div>  
+  <div class="column">
+    <div class="inner_div">
+      <img src="public/image/web/03.png" id = "103"style="width:100%">
+    </div>
+    <div class="inner_div">  
+      <img src="public/image/web/06.png" id = "106" style="width:100%">  
+    </div>
+    <div class="inner_div">  
+      <img src="public/image/web/08.png" id = "108" style="width:100%">  
+    </div>
+  </div>
+   
+</div>
+</div>
+<div class="mobile" style="display: none;">
+  <div class="row"> 
+    <div class="column">
+      <div class="inner_div">
+       <img src="public/image/mobile/01.png" id = "201" style="width:100%">
+      </div>
+      <div class="inner_div">
+        <img src="public/image/mobile/05.png" id = "205" style="width:100%">
+      </div>
+      <div class="inner_div">
+        <img src="public/image/mobile/09.png" id = "209" style="width:100%">
+      </div>
+      <div class="inner_div">
+        <img src="public/image/mobile/13.png" id = "213" style="width:100%">
+      </div>
+    </div>
+    <div class="column">
+      <div class="inner_div"> 
+        <img src="public/image/mobile/02.png" id = "202" style="width:100%">
+      </div>
+      <div class="inner_div">
+        <img src="public/image/mobile/06.png" id = "206" style="width:100%">  
+      </div>    
+      <div class="inner_div">
+        <img src="public/image/mobile/10.png" id = "210" style="width:100%">  
+      </div> 
+      <div class="inner_div">
+        <img src="public/image/mobile/14.png" id = "214" style="width:100%">
+      </div>  
+    </div>
+    <div class="column">
+      <div class="inner_div"> 
+        <img src="public/image/mobile/03.png" id = "203"  style="width:100%">
+      </div>
+      <div class="inner_div">   
+        <img src="public/image/mobile/07.png" id = "207" style="width:100%">    
+      </div>   
+      <div class="inner_div">
+        <img src="public/image/mobile/11.png" id = "211" style="width:100%">  
+      </div> 
+    </div>
+    <div class="column">
+      <div class="inner_div"> 
+        <img src="public/image/mobile/04.png" id = "204" style="width:100%">
+      </div>
+      <div class="inner_div">  
+        <img src="public/image/mobile/08.png" id = "208" style="width:100%">    
+      </div>
+      <div class="inner_div">
+        <img src="public/image/mobile/12.png" id = "212" style="width:100%">  
+      </div> 
+    </div>
+  </div>
+  </div>
+
+  <div class="logo" style="display: none;" id="logo">
+    <div class="row"> 
+      <div class="column">
+        <div class="inner_div"> 
+         <img src="public/image/logo/log01.png" id = "301" style="width:100%"> 
+        </div>
+      </div>
+      <div class="column">
+        <div class="inner_div"> 
+          <img src="public/image/logo/log02.png" id = "302" style="width:100%"> 
+        </div>
+      </div>              
+    </div>  
+    <div class="row"> 
+      <div class="column">
+        <div class="inner_div"> 
+         <img src="public/image/logo/log03.png" id = "303" style="width:100%"> 
+        </div>
+      </div>
+                    
+    </div>   
+  </div>
+
+
+  <div class="popup" style="display: none;">
+    <span class="fade"></span>
+    <div class="slider" id="slider">
+      <img id = "popup_5" src="public/image/logo/log01.png "  style="height:100%"> 
+      <div class="prev" > <div id="prev">  </div></div>
+      <div class= "next" > <div id="next">  </div> </div>
+     </div>
+    
+  </div>
+
+ 
+    <script> 
+      $(document).ready(function(){
+        var i,j,k,a;
+        var ls=301,lc=3,le=303;
+        var ms=201,mc=14,me=214;
+        var ws=101,wc=8,we=108;
+
+       
+       $(".li_web").click(function(){
+       $(".web").show();
+       $(".mobile").hide();
+       $(".logo").hide();
+       $(".li_web").addClass("active");
+       $(".li_logo").removeClass("active"); 
+       $(".li_mobile").removeClass("active");  
+
+        a = document.getElementById("slider");
+        a.style.height = "90%";
+        a.style.top = "5%";   
+
+       });  
+
+
+
+       $(".li_mobile").click(function(){
+       $(".web").hide();
+       $(".mobile").show();
+       $(".logo").hide();
+       $(".li_mobile").addClass("active");
+       $(".li_web").removeClass("active");
+       $(".li_logo").removeClass("active"); 
+      
+        a = document.getElementById("slider");
+        a.style.height = "80%";
+        a.style.top = "10%";
+
+       });  
+
+
+
+       $(".li_logo").click(function(){
+       $(".web").hide();
+       $(".mobile").hide();
+       $(".logo").show();
+       $(".li_logo").addClass("active"); 
+       $(".li_mobile").removeClass("active");
+       $(".li_web").removeClass("active");
+       
+        a = document.getElementById("slider");
+        a.style.height = "60%";
+        a.style.top = "20%";
+         
+       });    
+       
+       
+      
+
+       $("img").click(function(){
+          $(".popup").show(); 
+            i = this.src;
+            j = this.id;
+          $('#popup_5').attr('src',i);           
+       });  
+
+        
+       
+       $("#next").click(function(){      
+         if(j==le)   
+         j=le-lc;
+         else if(j==me)
+         j=me-mc;
+         else if(j==we)
+         j=we-wc;
+         
+          k = document.getElementById(++j).getAttribute("src")
+          $('#popup_5').attr('src',k);          
+      });  
+
+
+      $("#prev").click(function(){ 
+        if(j==ls)   
+         j=ls+lc;
+         else if(j==ms)
+         j=ms+mc;
+         else if(j==ws)
+         j=ws+wc;
+
+          k = document.getElementById(--j).getAttribute("src")
+          $('#popup_5').attr('src',k);
+           
+         
+      });     
+     
+       $(".fade").click(function(){
+          $(".popup").hide();
+       });  
+        
+        
+
+       });
+
+    </script>
+</body>
+</html>
+
+ 
