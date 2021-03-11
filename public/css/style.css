@@ -16,13 +16,13 @@ a{text-decoration-line : none;}
 li{list-style-type: none;margin: 20px 25px 20px 25px;display: inline-block;}
 .inner_div{overflow: hidden;margin-bottom: 10px;}
 .popup{display: flex;justify-content: center; align-content: center;width: 100%;}
-.fade{top: 0;left: 0;bottom: 0;right: 0;background: rgba(0, 0, 0, 0.75);position: fixed;display: flex;justify-content: center;align-items: center;}
+.fade{top: 0;left: 0;bottom: 0;right: 0;background: rgba(0, 0, 0, 0.85);position: fixed;display: flex;justify-content: center;align-items: center;}
 .slider{height: 90%;top: 5%;position: fixed;}
 /* .prev,.next{position: absolute;top: calc(50% - 20px);left:12px}  */
-.prev,.next{position: fixed;top: 80px;bottom: 80px;margin: auto 0;width: 50px;height: 60px;display: flex;align-items: center;cursor: pointer;justify-content: center;}
+.prev,.next{position: fixed;top: 80px;bottom: 80px;margin: auto 0;width: 50px;height: 60px;display: flex;align-items: center;cursor: pointer;justify-content: center;z-index: 1;}
 .next{right:12px} 
 .prev{left:12px} 
-#prev,#next{width: 40px;height: 40px;  border-radius: 100%;transition: all .3s;}
+#prev,#next{width: 40px;height: 40px;  border-radius: 100%;transition: all .3s;background: rgba(0, 0, 0, 0.75);}
 .prev:hover #prev,.next:hover #next{background: #4285f4;}
 #prev::before,#next::before{content:"";position: absolute; transform: rotate(225deg);background: transparent;border-right: 2px solid #fff;border-top: 2px solid #fff;width: 10px;height: 10px;top: calc(50% - 6px);right: calc(50% - 8px);} 
 #next::before{transform: rotate(45deg);left: calc(50% - 8px); }  
