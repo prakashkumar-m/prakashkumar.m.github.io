@@ -25,7 +25,7 @@ li{list-style-type: none;margin: 20px 25px 20px 25px;display: inline-block;}
 #prev,#next{width: 40px;height: 40px;  border-radius: 100%;transition: all .3s;background: rgba(0, 0, 0, 0.75);}
 .prev:hover #prev,.next:hover #next{background: #4285f4;}
 #prev::before,#next::before{content:"";position: absolute; transform: rotate(225deg);background: transparent;border-right: 2px solid #fff;border-top: 2px solid #fff;width: 10px;height: 10px;top: calc(50% - 6px);right: calc(50% - 8px);} 
-#next::before{transform: rotate(45deg);left: calc(50% - 8px); }  
+#next::before{transform: rotate(45deg);left: calc(50% - 8px);}  
 
 
 
