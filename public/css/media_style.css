@@ -1,0 +1,17 @@
+ 
+  
+   
+  @media(max-width: 767px) {
+      .logo .inner_div{-ms-flex: 100%;flex: 100%;max-width: 100%;}
+      .mobile .inner_div{-ms-flex: calc(50% - 5px);flex: calc(50% - 5px);max-width: calc(50% - 5px);}
+  }
+
+
+  @media(max-width: 640px) {
+     .mobile .column   {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+   
