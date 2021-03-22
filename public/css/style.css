@@ -41,7 +41,7 @@ a{text-decoration-line : none;}
 .cross_inner{width: 45px;height: 45px;display: flex;justify-content: center;align-items: center;}
 .cross{display: flex;justify-content: flex-end;}
 .cross_icon{width: 24px;height: 24px;}
-.frame_outter{position: absolute;left: 0;right: 0;top: 0;bottom: 0;cursor: pointer;}
+.frame_outter{position: fixed;left: 0;right: 0;top: 0;bottom: 0;cursor: pointer;}
 #popups_5{width: 100%;height: calc(100vh - 45px);border:none;}
 
 
