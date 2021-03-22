@@ -12,7 +12,7 @@ a{text-decoration-line : none;}
 /* .mobile .inner_div {-ms-flex: calc(25% - 12px);;flex: calc(25% - 12px);;max-width: calc(25% - 12px);} */
 .project .inner_div {position: relative;}
 .project .container{display:grid;grid-template-columns: repeat(auto-fill,minmax(300px,1fr));grid-gap:15px}
-.logo .container{display:grid;grid-template-columns: repeat(auto-fill,minmax(400px,1fr));grid-gap:15px}
+.logo .container{display:grid;grid-template-columns: repeat(auto-fill,minmax(430px,1fr));grid-gap:15px}
 .mobile .container{display:grid;grid-template-columns: repeat(auto-fill,minmax(235px,1fr));grid-gap:15px}
 .content img {vertical-align: middle;width: 100%;transition: transform .5s;cursor: pointer;} 
 .content img:hover{transform: scale(1.045);}
