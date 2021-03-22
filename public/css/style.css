@@ -45,7 +45,14 @@ a{text-decoration-line : none;}
 #popups_5{width: 100%;height: calc(100vh - 45px);border:none;}
 
 
-@media(max-width: 400px) {
+@media(max-width: 480px) {
+     .header{padding:22px 0;}
+     .header h1{margin: 0;}
+     .content{padding-top: 144px;}
+  }
+
+
+  @media(max-width: 400px) {
     .header h1 {font: 100 28px/50px googlesans;}
     .lists li a{font-size: 14px;padding: 0 6px;}
     .header li{margin: 0;}
