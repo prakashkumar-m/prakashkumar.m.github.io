@@ -43,3 +43,10 @@ a{text-decoration-line : none;}
 .cross_icon{width: 24px;height: 24px;}
 .frame_outter{position: absolute;left: 0;right: 0;top: 0;bottom: 0;cursor: pointer;}
 #popups_5{width: 100%;height: calc(100vh - 45px);border:none;}
+
+
+@media(max-width: 400px) {
+    .header h1 {font: 100 28px/50px googlesans;}
+    .lists li a{font-size: 14px;padding: 0 6px;}
+    .header li{margin: 0;}
+  }
