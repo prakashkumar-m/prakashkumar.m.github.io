@@ -1,8 +1,8 @@
 $(document).ready(function(){
-    var i,j,k;
+    var i,j,k,i1,i2;
     var ls=301,lc=4,le=304;
     var ms=201,mc=19,me=219;
-    var ws=101,wc=8,we=108;
+    var ws=101,wc=9,we=109;
    
    $('a[data-toggle="formtab"]').click(function(){
         var targetId = $(this).attr('href');
@@ -16,7 +16,8 @@ $(document).ready(function(){
       $(".popup").show(); 
         i = this.src;
         j = this.id;
-      $('#popup_5').attr('src',i);           
+      $('#popup_5').attr('src',i);   
+      $(".main").css("overflow","hidden");
    });  
 
    $(".next").click(function(){      
@@ -43,7 +44,19 @@ $(document).ready(function(){
  
    $(".fade").click(function(){
       $(".popup").hide();
+      $(".popups").hide();
+      $(".main").css("overflow","auto");
+
    });  
+
+    $(".heading").click(function(){
+      $(".popup").hide();
+      $(".popups").show();  
+        i1 = $(this).siblings().attr('href');
+        i2 = $(this).siblings().children().attr('id');
+      $('#popups_5').attr('src',i1);           
+    });
+
  
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
       if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
