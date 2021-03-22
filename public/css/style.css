@@ -2,7 +2,7 @@
 @font-face{font-family:'googlesans';src:url('../font/googlesans/googlesans-regular.woff2') format('woff2'),url('../font/googlesans/googlesans-regular.eot?#iefix') format('embedded-opentype'),url('../font/googlesans/googlesans-regular.ttf')format('truetype'),url('../font/googlesans/googlesans-regular.woff') format('woff');font-weight: 100;font-style: normal;}
 @font-face{font-family:'googlesans';src:url('../font/googlesans/googlesans-medium.woff2') format('woff2'),url('../font/googlesans/googlesans-medium.eot?#iefix') format('embedded-opentype'),url('../font/googlesans/googlesans-medium.ttf')format('truetype'),url('../font/googlesans/googlesans-medium.woff') format('woff');font-weight: 400;font-style: normal;}
 body{margin: 0;font-family: googlesans;}
-.header {text-align: center;padding: 32px;width: 100%;position: absolute;top: 0;}
+.header {text-align: center;padding: 32px 0;width: 100%;position: absolute;top: 0;}
 h1,a{text-transform : uppercase;}
 a{text-decoration-line : none;} 
 .container {display: -ms-flexbox;display: flex;-ms-flex-wrap: wrap;flex-wrap: wrap;padding: 0 15px;}
