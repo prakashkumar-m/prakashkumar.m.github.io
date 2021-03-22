@@ -42,11 +42,10 @@ $(document).ready(function(){
         $('#popup_5').attr('src',k);
      });     
  
-   $(".fade").click(function(){
+   $(".fade,.frame_outter").click(function(){
       $(".popup").hide();
       $(".popups").hide();
       $(".main").css("overflow","auto");
-
    });  
 
     $(".heading").click(function(){
@@ -54,7 +53,8 @@ $(document).ready(function(){
       $(".popups").show();  
         i1 = $(this).siblings().attr('href');
         i2 = $(this).siblings().children().attr('id');
-      $('#popups_5').attr('src',i1);           
+      $('#popups_5').attr('src',i1); 
+      $(".main").css("overflow","hidden");          
     });
 
  
