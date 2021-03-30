@@ -1,8 +1,13 @@
 $(document).ready(function(){
     var i,j,k,i1,i2;
-    var ls=301,lc=4,le=304;
-    var ms=201,mc=19,me=219;
-    var ws=101,wc=9,we=109;
+    var ls=301, ms=201, ws=101;
+    var lc = $('#logo .inner_div').length;
+    var mc = $('#mobile .inner_div').length;
+    var wc = $('#web .inner_div').length;
+    var le = ls + lc - 1;
+    var we = ws + wc - 1;
+    var me = ms + mc - 1;
+    
    
    $('a[data-toggle="formtab"]').click(function(){
         var targetId = $(this).attr('href');
@@ -42,7 +47,7 @@ $(document).ready(function(){
         $('#popup_5').attr('src',k);
      });     
  
-   $(".fade,.frame_outter").click(function(){
+   $(".fade,.frame_outter,.cross").click(function(){
       $(".popup").hide();
       $(".popups").hide();
       $(".main").css("overflow","auto");

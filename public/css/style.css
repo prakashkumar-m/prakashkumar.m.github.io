@@ -7,9 +7,7 @@ h1,a{text-transform : uppercase;}
 a{text-decoration-line : none;} 
 .container {display: -ms-flexbox;display: flex;-ms-flex-wrap: wrap;flex-wrap: wrap;padding: 0 15px;}
 .logo .container,.mobile .container {gap:15px;padding-bottom: 15px;}
-.web .column {-ms-flex: 33.33%;flex: 33.33%;max-width: 33.33%;padding: 0 5px;}
-/* .logo .inner_div {-ms-flex: calc(50% - 8px);flex: calc(50% - 8px);max-width: calc(50% - 8px);}  */
-/* .mobile .inner_div {-ms-flex: calc(25% - 12px);;flex: calc(25% - 12px);;max-width: calc(25% - 12px);} */
+.web .column {-ms-flex: 33.33%;flex: 33.33%;max-width: 33.33%;padding: 0 5px;} 
 .project .inner_div {position: relative;}
 .project .container{display:grid;grid-template-columns: repeat(auto-fill,minmax(315px,1fr));grid-gap:15px}
 .logo .container{display:grid;grid-template-columns: repeat(auto-fill,minmax(430px,1fr));grid-gap:15px}
@@ -25,7 +23,7 @@ a{text-decoration-line : none;}
 .popup{display: flex;justify-content: center; align-content: center;width: 100%;}
 .fade{top: 0;left: 0;bottom: 0;right: 0;background: rgba(0, 0, 0, 0.85);position: fixed;display: flex;justify-content: center;align-items: center;}
 .popups .fade{background: rgba(0, 0, 0, 0.75);}
-.slider{height: 90%;top: 5%;position: fixed;display: flex;justify-content: center;align-items: center;} 
+.slider{height: 90%;top: 5%;position: fixed;display: flex;justify-content: center;align-items: center;width: 80%;} 
 .prev,.next{position: fixed;top: 80px;bottom: 80px;margin: auto 0;width: 50px;height: 60px;display: flex;align-items: center;cursor: pointer;justify-content: center;z-index: 1;}
 .next{right:12px} 
 .prev{left:12px} 
@@ -43,12 +41,13 @@ a{text-decoration-line : none;}
 .cross_icon{width: 24px;height: 24px;}
 .frame_outter{position: fixed;left: 0;right: 0;top: 0;bottom: 0;cursor: pointer;}
 #popups_5{width: 100%;height: calc(100vh - 45px);border:none;}
-
+.popup .cross{position: absolute;top: 0;right: 10px;cursor: pointer;}
 
 @media(max-width: 480px) {
      .header{padding:22px 0;}
      .header h1{margin: 0;}
      .content{padding-top: 144px;}
+    .logo .container {grid-template-columns: repeat(auto-fill,minmax(380px,1fr));}
   }
 
 
@@ -56,4 +55,6 @@ a{text-decoration-line : none;}
     .header h1 {font: 100 28px/50px googlesans;}
     .lists li a{font-size: 14px;padding: 0 6px;}
     .header li{margin: 0;}
+    .logo .container {grid-template-columns: repeat(auto-fill,minmax(290px,1fr));}
+    .project .container {grid-template-columns: repeat(auto-fill,minmax(285px,1fr));}
   }
