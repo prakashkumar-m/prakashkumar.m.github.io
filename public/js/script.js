@@ -53,8 +53,7 @@ $(document).ready(function(){
       $(".main").css("overflow","auto");
    });  
 
-    $(".heading").click(function(){
-      $(".popup").hide();
+    $(".heading").click(function(){ 
       $(".popups").show();  
         i1 = $(this).siblings().attr('href');
         i2 = $(this).siblings().children().attr('id');
